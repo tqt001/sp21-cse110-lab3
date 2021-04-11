@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang=”en”>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Journal</title>
+        <link rel="icon" type="image/jpg" href="IMG_0246.jpg">
+    </head>
+    <body>
+        <header>
+            <div><h1><strong><center>My Journal</center></strong></h1></div>
+            <nav>
+                <ul>
+                    <li><a href="#Highlights">Highlights</a></li>
+                    <li><a href="#TODO">To Do</a></li>
+                    <li><a href="#Vent">Vent</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h1>Picture of Me</h1>
+            <img src="IMG_0246.jpg" alt="Picture of me" max-width=auto height=300px/>
+            <br>
+            <br>
+            <i>This is a picture of me during my study abroad trip in Edinburgh, Scotland.</i>
+            <hr>
+
+            <h1>Video of Me Getting Bodied by my Buddy</h1>
+            <video width=650px max-height=auto controls>
+                <source src="IMG_3734.MOV" type="video/mp4">
+            </video>
+            <br>
+            <br>
+            <i>This was in Revelle Plaza. LOL</i>
+            <hr>
+            
+            <h1>Favorite Sound</h1>
+            <audio controls>
+                <source src="yt1s.com - Relaxing Sound of Rain and Wind in Forest 1 Hour  Rain Drops Falling From Trees with Wind.mp3">
+            </audio>
+            <br>
+            <i>I enjoy the sound of rain. We don't get alot of rain down in San Diego. </i>
+            <hr>
+        </section>
+        
+
+        <main>
+            <h1>Journal Entries</h1>
+            <ul>
+                <li><b>Date: 04/08/21</b></li>
+                <details>
+                    <summary>Highlights</summary>
+                    <em>Today I got my covid vaccine! YAY :)</em>
+                </details>
+                
+                <details>
+                    <summary>Lowlights</summary>
+                    <i>I have alot of homework. GRRRRR.</i>
+                </details>
+                <br>
+
+                <li><b>Date: 04/09/21</b></li>
+                <details>
+                    <summary>Highlights</summary>
+                    <em>I got to go home and hangout with family.</em>
+                </details>
+                <details>
+                    <summary>Lowlights</summary>
+                    <i>I am still behind on classes and its only week 2.</i>
+                </details>
+                <br>
+
+                <li><b>Date: 04/10/21</b></li>
+                <details>
+                    <summary>Highlights</summary>
+                    <em>I got to eat some pho. I also got to watch some <a href="https://www.twitch.tv/xqcow">xqcow.</a></em>
+                </details>
+                <details>
+                    <summary>Lowlights</summary>
+                    <i>I didn't do any work.</i>
+                </details>
+            </ul>
+            <br>
+
+            <h1>To Do List</h1>
+            <ol>
+                <li>Remember to schedule next covid test</li>
+                <li>Finish up Math 103B HW</li>
+                <li>Make sure CSE 110 group is ready to meet on monday</li>
+            </ol>
+            <br>
+
+            <h1>Vent</h1>
+            <p><strong>I want corona to be over already. I need some human interaction. Hopefully fall quarter will be a blast when we all return back to in person instruction.</strong></p>
+            <br>
+
+            <h1>Add Journal Entry</h1>
+            <form>
+                <fieldset>
+                    <label for="date">Date: </label>
+                    <input type="date">
+                    <br>
+                    <label for="day">Day</label>
+                    <select name="day">
+                        <option value="Sunday">Sunday</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                    </select>
+                    <br>
+                    <input type="radio"><label>AM</label>
+                    <input type="radio"><label>PM</label>
+                    <br>
+                    <label for="Category">Category</label>
+                    <input list="Category">
+                    <datalist id="Category">
+                        <option value="Highlight">
+                        <option value="Lowlight">
+                        <option value="To Do List">
+                        <option value="Vent">
+                    </datalist>
+                    <br>
+                    <label for="commentary">Commentary</label>
+                    <textarea id="commentary" rows="1" cols="50"></textarea>
+                </fieldset>
+                <button>Done</button>
+            </form>
+        </main>
+        <footer>
+            <h6><center>For CSE 110</center></h6>
+        </footer>
+    </body>
+</html>
