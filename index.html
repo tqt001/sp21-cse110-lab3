@@ -11,7 +11,9 @@
             /* lightblue background color */
             body {
                 background-color: lightblue;
-    
+                padding-left: 10em;
+                padding-right: 10em;
+                padding-bottom: 10em;
             }
     
             ul {
@@ -21,7 +23,12 @@
 
             .box {
                border: 3px solid white; 
+               border-color: white;
                border-style: dashed;
+               border-radius: 1px;
+               border-width: 1px;
+               margin-top: 1em;
+               margin-bottom: 1em;
             }
 
         </style>
@@ -29,7 +36,7 @@
     <body>
         <header>
             <body>
-                <div><h1 style="font-size: 3em; font-weight: bold;">My Journal</h1></div>
+                <div><h1 style="font-size: 3em; font-weight: bold; padding-top: 1em;">My Journal</h1></div>
                 <nav>
                     <ul>
                         <li><a href="#Highlights">Highlights</a></li>
@@ -43,10 +50,8 @@
 
         <main>
             <section>
-                <h1>Picture of Me</h1>
-                <img src="IMG_0246.jpg" alt="Picture of me" width=225 height=300>
-                <br>
-                <br>
+                <h1 style="padding: 1em 1em 1em 1em">Picture of Me</h1>
+                <img src="IMG_0246.jpg" alt="Picture of me" width=225 height=300 style="margin-left: 1em; margin-right: 1em">
                 <div class="box">
                     <p>This is a picture of me during my study abroad trip in Edinburgh, Scotland.</p>
                 </div>
@@ -56,7 +61,7 @@
 
             <section>
                 <h1>Video of Me Getting Bodied by my Buddy</h1>
-                <video width=650 height=400 controls>
+                <video width=650 height=400 controls style="margin: 1em 1em 1em 1em">
                     <source src="IMG_3734.MOV" type="video/mp4">
                 </video>
                 <br>
@@ -65,7 +70,7 @@
             </section>
             
             <section>
-                <h1>Favorite Sound</h1>
+                <h1 style="margin: auto">Favorite Sound</h1>
                 <audio controls>
                     <source src="Rain.mp3">
                 </audio>
