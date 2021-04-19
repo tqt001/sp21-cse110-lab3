@@ -1,5 +1,5 @@
 **What did I work on yesterday?**\
-I worked on MATH 103B questions to prepare for an upcoming quiz.
+I didnt work on the lab yeseterday. 
 
 **What am I working on today?**\
 I am working on my lab for CSE 110.
