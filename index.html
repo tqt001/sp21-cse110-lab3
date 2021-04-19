@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Journal</title>
+        <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/jpg" href="IMG_0246.jpg">
        
        <style>
@@ -16,19 +17,27 @@
                 padding-bottom: 10em;
             }
     
-            ul {
-                font-family: 'Source Code Pro', monospace;
+             ul a:hover {
+                font-size: 100px;
                 
+            }
+            h1, h3 [type~="button"] {
+                font-size: large;
+            }
+
+            .musicplayer:active {
+                background-color: tomato;
             }
 
             .box {
-               border: 3px solid white; 
-               border-color: white;
-               border-style: dashed;
-               border-radius: 1px;
-               border-width: 1px;
-               margin-top: 1em;
-               margin-bottom: 1em;
+                display: inline-grid;
+                border: 3px solid white; 
+                border-color: white;
+                border-style: dashed;
+                border-radius: 1px;
+                border-width: 1px;
+                margin-top: 1em;
+                margin-bottom: 1em;
             }
 
         </style>
@@ -36,9 +45,9 @@
     <body>
         <header>
             <body>
-                <div><h1 style="font-size: 3em; font-weight: bold; padding-top: 1em;">My Journal</h1></div>
-                <nav>
-                    <ul>
+                <div><h1 id="title" style="font-size: 3em; font-weight: bold; padding-top: 1em;">My Journal</h1></div>
+                <nav style="position: fixed;">
+                    <ul style="display: inline; list-style: none; display: flex; flex-wrap: wrap;">
                         <li><a href="#Highlights">Highlights</a></li>
                         <li><a href="#TODO">To Do</a></li>
                         <li><a href="#Vent">Vent</a></li>
@@ -50,7 +59,7 @@
 
         <main>
             <section>
-                <h1 style="padding: 1em 1em 1em 1em">Picture of Me</h1>
+                <h1 style="padding: 1em 1em 1em 1em; color: purple; text-decoration: underline; text-align: center">Picture of Me</h1>
                 <img src="IMG_0246.jpg" alt="Picture of me" width=225 height=300 style="margin-left: 1em; margin-right: 1em">
                 <div class="box">
                     <p>This is a picture of me during my study abroad trip in Edinburgh, Scotland.</p>
@@ -60,8 +69,8 @@
             </section>
 
             <section>
-                <h1>Video of Me Getting Bodied by my Buddy</h1>
-                <video width=650 height=400 controls style="margin: 1em 1em 1em 1em">
+                <h1 style="display: block;">Video of Me Getting Bodied by my Buddy</h1>
+                <video height=400 controls style="margin: 1em 1em 1em 1em; max-width: auto; position: relative;">
                     <source src="IMG_3734.MOV" type="video/mp4">
                 </video>
                 <br>
@@ -70,10 +79,12 @@
             </section>
             
             <section>
-                <h1 style="margin: auto">Favorite Sound</h1>
-                <audio controls>
-                    <source src="Rain.mp3">
-                </audio>
+                <div class="musicplayer">
+                    <h1 style="margin: auto">Favorite Sound</h1>
+                    <audio controls>
+                        <source src="Rain.mp3">
+                    </audio>
+                </div>
                 <br>
                 <i>I enjoy the sound of rain. We don't get alot of rain down in San Diego. </i>
                 <hr>
